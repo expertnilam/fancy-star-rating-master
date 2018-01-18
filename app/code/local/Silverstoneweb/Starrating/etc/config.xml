@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Silverstoneweb_Starrating extension
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ * 
+ * @category       Silverstoneweb
+ * @package        Silverstoneweb_Starrating
+ * @copyright      Copyright (c) 2015
+ * @license        http://opensource.org/licenses/mit-license.php MIT License
+ */
+-->
+<config>
+	<modules>
+        <Silverstoneweb_Starrating>
+            <version>1.0.0</version>
+        </Silverstoneweb_Starrating>
+    </modules>
+    <frontend>
+    	<routers>
+            <starrating>
+                <use>standard</use>
+                <args>
+                    <module>Silverstoneweb_Starrating</module>
+                    <frontName>starrating</frontName>
+                </args>
+            </starrating>
+        </routers>
+        <layout>
+            <updates>
+                <starrating>
+                    <file>starrating.xml</file>
+                </starrating>
+            </updates>
+        </layout>
+    </frontend>
+    <global>
+    	<blocks>
+    		<starrating>
+                <class>Silverstoneweb_Starrating_Block</class>
+            </starrating> 
+    		<review>
+    			<rewrite>
+    				<form>Silverstoneweb_Starrating_Block_Form</form>
+    			</rewrite>
+    		</review>
+    	</blocks>
+    </global>
+</config>

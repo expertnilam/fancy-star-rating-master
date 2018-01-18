@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<layout>
+	<review_product_list translate="label">
+		<reference name="head">
+			<action method="addJs"><script>starrating/jquery.min.js</script></action>
+            <action method="addJs"><script>starrating/jquery.rateyo.js</script></action>
+            <action method="addCss"><stylesheet>starrating/css/jquery.rateyo.min.css</stylesheet></action>
+		</reference>
+	</review_product_list>
+</layout>
